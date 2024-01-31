@@ -21,6 +21,12 @@ export const CustomButton = styled.button<CustomButtonProps>`
   outline: 0;
   box-shadow: none;
 
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  -ms-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
   cursor: pointer;
 
   &:disabled {
@@ -31,6 +37,12 @@ export const CustomButton = styled.button<CustomButtonProps>`
 
   &:not(:disabled):hover {
     background-color: ${(props) => props.theme.baseColors.darkMain};
+
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -o-transition: background-color 0s;
+    -ms-transition: background-color 0s;
+    transition: background-color 0s;
   }
 
   &:focus {

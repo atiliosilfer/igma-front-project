@@ -11,6 +11,12 @@ export const CustomAvatar = styled.button<CustomAvatarProps>`
   box-shadow: none;
   cursor: pointer;
 
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  -ms-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
   &:disabled {
     background-color: ${(props) => props.theme.baseColors.darkDisabled};
 
@@ -19,6 +25,12 @@ export const CustomAvatar = styled.button<CustomAvatarProps>`
 
   &:not(:disabled):hover {
     background-color: ${(props) => props.theme.brandColors.primaryLight};
+
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -o-transition: background-color 0s;
+    -ms-transition: background-color 0s;
+    transition: background-color 0s;
   }
 
   :focus {
