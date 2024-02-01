@@ -1,5 +1,5 @@
 import { Avatar } from '../../components/Avatar'
-import { Body, Header } from './styles'
+import { Body, Footer, Header } from './styles'
 import Logo from '../../assets/LogoHeader.svg'
 import { HeroSection } from './components/HeroSection'
 import { ClientsSection } from './components/ClientsSection'
@@ -18,6 +18,12 @@ export function Home() {
         <ClientsSection />
         <NewsletterSection />
       </Body>
+
+      <Footer>
+        <span>Igma Delightful Digital Products Company.</span>
+
+        <span>© Copyright 2023</span>
+      </Footer>
     </>
   )
 }

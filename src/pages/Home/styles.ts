@@ -16,3 +16,20 @@ export const Header = styled.header`
 export const Body = styled.body`
   padding: 0 72px;
 `
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: ${(props) => props.theme.spacingStack.sm};
+  padding-bottom: ${(props) => props.theme.spacingStack.xxl};
+  margin: 0 72px;
+
+  border-top: 1px solid ${(props) => props.theme.baseColors.darkMain};
+
+  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-weight: ${(props) => props.theme.fontWeight.medium};
+  line-height: ${(props) => props.theme.lineHeight.lg};
+  text-align: left;
+  color: ${(props) => props.theme.baseColors.darkMain};
+`
