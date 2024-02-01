@@ -1,6 +1,9 @@
 import { Avatar } from '../../components/Avatar'
-import { Header } from './styles'
+import { Body, Header } from './styles'
 import Logo from '../../assets/LogoHeader.svg'
+import { HeroSection } from './components/HeroSection'
+import { ClientsSection } from './components/ClientsSection'
+import { NewsletterSection } from './components/NewsletterSection'
 
 export function Home() {
   return (
@@ -9,6 +12,12 @@ export function Home() {
         <img src={Logo} alt="logo" />
         <Avatar />
       </Header>
+
+      <Body>
+        <HeroSection />
+        <ClientsSection />
+        <NewsletterSection />
+      </Body>
     </>
   )
 }

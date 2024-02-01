@@ -12,3 +12,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
 `
+
+export const Body = styled.body`
+  padding: 0 72px;
+`
