@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { HeroSectionContainer } from './styles'
+import { HeroSectionContainer, HeroContent } from './styles'
 import MagmaLarge from '../../../../assets/Image.png'
 import VectorHero from '../../../../assets/vectorHero.svg'
 import IgmaLogotype from '../../../../assets/logotipoIgma.svg'
@@ -36,9 +36,10 @@ export function HeroSection() {
       <div>
         <canvas ref={canvasRef} id="myCanvas" width="438" height="680" />
       </div>
-      <div>
+      <HeroContent>
         <span>
-          Prazer, somos <img src={IgmaLogotype} alt="igma logotipe" />
+          Prazer, somos
+          <img src={IgmaLogotype} alt="igma logotipe" />
         </span>
 
         <h1>
@@ -50,7 +51,7 @@ export function HeroSection() {
           empresas. Criamos produtos digitais que revolucionam o relacionamento
           entre empresas e consumidores.
         </p>
-      </div>
+      </HeroContent>
     </HeroSectionContainer>
   )
 }
