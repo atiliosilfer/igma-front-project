@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# IGMA - Front-end Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Tecnologias utilizadas nesse projeto:
+ - React
+ - HTML & CSS;
+ - Typescript; 
+ - CSS-in-JS framework (styled-components);
+ - react-hook-form;
+ - zod;
+ - phosphor-icons
 
-Currently, two official plugins are available:
+## 🚀 Começando
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-## Expanding the ESLint configuration
+### 📋 Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para iniciar o projeto é necessário ter o [Node.js](https://nodejs.org/en) instalado em sua maquina! Recomendado a versão LTS
 
-- Configure the top-level `parserOptions` property like this:
+### 🔧 Instalação
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Após clonar esse repositório na pasta do projeto é necessário rodar o seguinte comando no terminal para baixar as dependencias do projeto:
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Após instalar as dependencias basta iniciar o projeto utilizando o comando abaixo:
+
+```
+npm run dev
+```
+
+----------------------------------------------------------------
+
+#TODO: 
+  - [x]  escrever tokens
+  - [x]  iniciar repositorio
+  - [x]  criar componentes padroes
+    - [ ]  resolver erro do input
+  - [x]  header
+     - [x]  animação fade in
+  - [x]  body
+    - [x]  animação fade in
+  - [x]  footer
+  - [x]  section 1
+  - [x]  section 2
+  - [x]  section 3
+    - [x]  forms
+    - [ ]  animação
+  - [ ]  responsividade
+  - [X]  READ.ME
