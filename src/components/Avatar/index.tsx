@@ -8,8 +8,6 @@ interface AvatarProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Avatar({ variant, children, ...props }: AvatarProps) {
-  console.log(children)
-
   return (
     <CustomAvatar variant={variant} {...props}>
       {children !== undefined ? (

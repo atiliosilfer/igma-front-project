@@ -2,6 +2,7 @@ import { styled, css } from 'styled-components'
 
 interface CustomInputProps {
   variant?: 'md' | 'lg'
+  error?: string
 }
 
 export const CustomInput = styled.input<CustomInputProps>`
@@ -52,4 +53,17 @@ export const CustomInput = styled.input<CustomInputProps>`
           height: 56px;
           font-size: ${(props) => props.theme.fontSize.xs};
         `}
+
+  ${(props) =>
+    props.error &&
+    css`
+      border-color: ${(props) => props.theme.feedbackColors.errorMain};
+    `}
+`
+
+export const ErrorMessage = styled.span`
+  color: ${(props) => props.theme.feedbackColors.errorMain} !important;
+  font-size: ${(props) => props.theme.fontSize.xxxs};
+  font-weight: ${(props) => props.theme.fontWeight.medium};
+  line-height: ${(props) => props.theme.lineHeight.sm};
 `
